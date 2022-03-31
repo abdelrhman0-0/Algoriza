@@ -1,0 +1,206 @@
+
+
+img[alt="logo"] {
+  max-width: 36px;
+}
+.brand-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 260px;
+  padding: 25px 20px 25px;
+  background-color: #fff;
+}
+.aside-container svg {
+  color: #7367f0;
+}
+
+.content-container {
+  color: #625f6e;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.content-container li {
+  padding: 15px 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.content-container li i,
+.content-container li label input {
+  padding-right: 10px;
+  font-size: 1.1rem;
+}
+
+.content-container li label input[type="radio"]#shop:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  position: relative;
+  background-color: #4a40b8;
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: visible;
+}
+.content-container li label {
+  cursor: pointer;
+}
+.content-container li:hover {
+  -webkit-transform: translateX(8px);
+      -ms-transform: translateX(8px);
+          transform: translateX(8px);
+}
+.content-container ul {
+  padding-bottom: 30px;
+}
+
+.disabled {
+  cursor: text !important;
+  -webkit-transform: translateX(0) !important;
+      -ms-transform: translateX(0) !important;
+          transform: translateX(0) !important;
+}
+.disabled:hover {
+  cursor: text !important;
+  -webkit-transform: translateX(0) !important;
+      -ms-transform: translateX(0) !important;
+          transform: translateX(0) !important;
+}
+.shop {
+  background-color: #7367f0;
+  -webkit-box-shadow: 0 0 15px 0 rgb(34 41 47 / 15%);
+          box-shadow: 0 0 15px 0 rgb(34 41 47 / 15%);
+  border-radius: 0.25rem;
+  color: #fff;
+}
+.span-number {
+  background-color: #fff3e8;
+  color: #ff9e43;
+  padding: 3px 7px;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  font-weight: 500;
+}
+.aside-header {
+  font-weight: 500;
+  color: #a6a4b0;
+  font-size: 0.9rem;
+  padding-top: 20px;
+}
+
+aside {
+  background-color: #fff;
+  padding: 25px 20px 25px;
+  -webkit-box-shadow: 0 0 15px 0 rgb(34 41 47 / 5%);
+          box-shadow: 0 0 15px 0 rgb(34 41 47 / 5%);
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 260px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  overflow-y: scroll;
+
+  margin-top: 78px;
+}
+
+aside::-webkit-scrollbar {
+  width: 12px;
+  background-color: #efefef;
+  padding-top: 30px;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+aside::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 6px;
+  background-color: #a3a3a3;
+}
+/* aside:hover aside::-webkit-scrollbar{
+    height: 8px;
+    width: 5px;
+    background-color: #EFEFEF;
+}
+aside:hover aside::-webkit-scrollbar-thumb {
+    height: 50px;
+    width: 25px;
+    background-color: #a3a3a3;
+
+} */
+
+.brand {
+  color: #7367f0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.brand span {
+  padding-left: 15px;
+}
+.fa-xmark {
+  color: #7367f0;
+  font-size: 1.5rem;
+}
+
+.background-for-modal {
+  position: fixed;
+  z-index: 11;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 500px) {
+  aside,
+  .brand-container {
+    left: -260px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .closed {
+    left: -260;
+  }
+  .opened {
+    left: 0;
+  }
+}

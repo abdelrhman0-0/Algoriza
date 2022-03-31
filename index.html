@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="E-Comerce Website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="keywords" content="shop,shopping,e-comerce" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/imgs/logo.36f34a9f.svg"
+      type="image/x-icon"
+    />
+    <title>Algoriza</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/aside.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/store.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--  Background modal in mobile -->
+    <div class="background-for-modal"></div>
+
+    <!-- Scroll to top button  -->
+
+    <button id="scrollBtn"><i class="fa-solid fa-arrow-up-long"></i></button>
+
+    <!--  Side Bar-->
+    <aside>
+      <div class="brand">
+        <div class="brand-container">
+          <a>
+            <img src="assets/imgs/logo.36f34a9f.svg" alt="logo" />
+            <span>Vuexy</span>
+          </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="d-xl-block collapse-toggle-icon feather feather-disc"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg "
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="unshowed-on-laptop d-xl-none bars feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+      <div class="content-container">
+        <ul>
+          <li class="d-flex justify-content-between align-items-center">
+            <i class="fa-solid fa-house"></i>Dashboards
+            <span class="span-number">2</span>
+          </li>
+          <li><i class="fa-solid fa-envelope"></i>Email</li>
+          <li><i class="fa-brands fa-rocketchat"></i>Chat</li>
+          <li><i class="fa-solid fa-circle-check"></i>Todo</li>
+          <li><i class="fa-solid fa-calendar"></i>Calender</li>
+          <li><i class="fa-solid fa-file-lines"></i>Invoice</li>
+          <li><i class="fa-solid fa-cart-shopping"></i>eComerce</li>
+          <li class="shop">
+            <label>
+              <input type="radio" id="shop" />
+              shop
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" />
+              Details
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" />
+              Wishlist
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" />
+              Checkout
+            </label>
+          </li>
+          <li>User</li>
+          <li>Pages</li>
+        </ul>
+        <span class="aside-header">USER INTERFACE</span>
+        <ul>
+          <li><i class="fa-solid fa-droplet"></i>Colors</li>
+          <li><i class="fa-solid fa-eye"></i>Feather</li>
+          <li class="d-flex justify-content-between align-items-center">
+            <i class="fa-solid fa-credit-card"></i>Cards
+          </li>
+        </ul>
+        <ul>
+          <li><i class="fa-solid fa-box-archive"></i>Components</li>
+          <li><i class="fa-solid fa-circle-plus"></i>Extensions</li>
+          <li><i class="fa-solid fa-table-layout"></i>Page Layouts</li>
+        </ul>
+        <span class="aside-header">FORMS & TABLES</span>
+        <ul>
+          <li><i class="fa-solid fa-clone"></i>Forms Elements</li>
+          <li><i class="fa-solid fa-clone"></i>Forms Layout</li>
+          <li><i class="fa-solid fa-box-open"></i>Forms Wizard</li>
+          <li><i class="fa-solid fa-circle-check"></i>Forms Validation</li>
+          <li><i class="fa-solid fa-clone"></i>Forms Repeater</li>
+          <li><i class="fa-solid fa-table-cells-large"></i>BS Table</li>
+          <li><i class="fa-solid fa-table-cells-large"></i>Good Table</li>
+        </ul>
+        <span class="aside-header">CHARTS & MAPS</span>
+        <ul>
+          <li class="d-flex justify-content-between align-items-center">
+            <i class="fa-solid fa-chart-pie"></i>Charts
+            <span class="span-number">3</span>
+          </li>
+          <li><i class="fa-solid fa-book-open"></i>Leaflet</li>
+        </ul>
+        <span class="aside-header">OTHERS</span>
+        <ul>
+          <li><i class="fa-solid fa-shield"></i>Access Control</li>
+          <li class="d-flex justify-content-between align-items-center">
+            <i class="fa-solid fa-bars"></i>Menu Levels <span></span>
+          </li>
+          <li class="disabled">
+            <i class="fa-solid fa-eye-slash"></i>Disabled Menu
+          </li>
+          <li><i class="fa-solid fa-circle-question"></i>Raise Support</li>
+          <li><i class="fa-solid fa-file"></i>Documentation</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Spining icon  -->
+    <a class="spining-icon"><i class="fas fa-gears fa-spin"></i></a>
+
+    <div class="container">
+      <nav>
+        <ul class="nav-ul">
+          <li class="unshowed-on-laptop">
+            <i class="fa-solid bars fa-bars"></i>
+          </li>
+
+          <li><i class="fa-solid fa-calendar"></i></li>
+          <li><i class="fa-brands fa-rocketchat"></i></li>
+          <li><i class="fa-solid fa-envelope"></i></li>
+          <li><i class="fa-solid fa-rectangle-list"></i></li>
+          <li>
+            <svg
+              data-v-1134b199=""
+              xmlns="http://www.w3.org/2000/svg"
+              width="21px"
+              height="21px"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-warning feather fa-star feather-star"
+            >
+              <polygon
+                data-v-1134b199=""
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+              ></polygon>
+            </svg>
+          </li>
+        </ul>
+        <ul class="nav-ul">
+          <li><img src="assets/imgs/americaFlag.png" alt="America-flag" /></li>
+          <li>English</li>
+          <li><i class="fa-solid fa-moon"></i></li>
+          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+          <li><i class="fa-solid fa-bell"></i></li>
+        </ul>
+      </nav>
+
+      <div class="store pt-5 mt-5">
+        <div class="store-path unshowed-on-mobile-flex mt-5 pt-5">
+          <div>
+            <span>Shop</span>
+            <span>|</span>
+            <span><i class="main-color fa-solid fa-house"></i></span>
+            <span class="main-color"
+              ><i class="fa-solid fa-angle-right"></i
+            ></span>
+            <span class="main-color">EComerce</span>
+            <span class="main-color"
+              ><i class="fa-solid fa-angle-right"></i
+            ></span>
+            <span class="main-color">Shop</span>
+          </div>
+          <div>
+            <a><i class="fas fa-gear"></i></a>
+          </div>
+        </div>
+        <div class="store-container ms-2">
+          <div class="filters">
+            <a class="unshowed-on-laptop bars"
+              ><i class="fa-solid bars fa-bars"></i
+            ></a>
+            <span class="unshowed-on-mobile-block">Filters</span>
+            <div class="filter-items unshowed-on-mobile-block">
+              <span class="categories-header">Multi Range</span>
+              <ul>
+                <li><input type="radio" />All</li>
+                <li><input type="radio" /><= $10</li>
+                <li><input type="radio" />$10 - $100</li>
+                <li><input type="radio" /><= $500</li>
+              </ul>
+              <span class="categories-header">Price Range</span>
+              <input type="range" min="0" max="100" />
+              <span class="categories-header">Categories</span>
+              <ul>
+                <li><input type="radio" />Appliances</li>
+                <li><input type="radio" />Audio</li>
+                <li><input type="radio" />Cameras & Camcorders</li>
+                <li><input type="radio" />Car Electronics & GPS</li>
+                <li><input type="radio" />Cell Phones</li>
+                <li><input type="radio" />Computers & Tablets</li>
+                <li><input type="radio" />Health, Fitness & Beauty</li>
+                <li><input type="radio" />Office & School Supplies</li>
+                <li><input type="radio" />TV & Home Theater</li>
+                <li><input type="radio" />Video Games</li>
+              </ul>
+              <span class="categories-header">Brands</span>
+              <ul>
+                <li><input type="radio" />Insignia™</li>
+                <li><input type="radio" />Samsung</li>
+                <li><input type="radio" />Metra</li>
+                <li><input type="radio" />HP</li>
+                <li><input type="radio" />Apple</li>
+                <li><input type="radio" />GE</li>
+                <li><input type="radio" />Sony</li>
+                <li><input type="radio" />Incipio</li>
+                <li><input type="radio" />KitchenAid</li>
+                <li><input type="radio" />Whirlpool</li>
+              </ul>
+
+              <span class="categories-header">Ratings</span>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17px"
+                    height="17px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star fill-current text-warning"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17px"
+                    height="17px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star fill-current text-warning"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17px"
+                    height="17px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star fill-current text-warning"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17px"
+                    height="17px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star fill-current text-warning"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#E5E5E8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star text-muted"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <span class="up">& up</span>
+                </div>
+                <div>
+                  <span>160</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17px"
+                    height="17px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star fill-current text-warning"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17px"
+                    height="17px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star fill-current text-warning"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17px"
+                    height="17px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star fill-current text-warning"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#E5E5E8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star text-muted"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#E5E5E8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star text-muted"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <span class="up">& up</span>
+                </div>
+                <div>
+                  <span>176</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17px"
+                    height="17px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star fill-current text-warning"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17px"
+                    height="17px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star fill-current text-warning"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#E5E5E8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star text-muted"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#E5E5E8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star text-muted"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#E5E5E8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star text-muted"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <span class="up">& up</span>
+                </div>
+                <div>
+                  <span>291</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17px"
+                    height="17px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star fill-current text-warning"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#E5E5E8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star text-muted"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#E5E5E8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star text-muted"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#E5E5E8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star text-muted"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#E5E5E8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-star text-muted"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    ></polygon>
+                  </svg>
+                  <span class="up">& up</span>
+                </div>
+                <div>
+                  <span>176</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="d-flex justify-content-between pb-2 pt-sm-5 pt-0">
+              <div>
+                <span class="results unshowed-on-mobile-block"></span>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between pe-2">
+                  <div class="dropdown me-2">
+                    <div class="dropdown-toggle">
+                      <span>Featured</span>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="dropdown-menu d-none">
+                      <li><a>Featured</a></li>
+                      <li><a>Lowest</a></li>
+                      <li><a>Highest</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="layout">
+                    <a class="layout1 layout-toggle">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18px"
+                        height="18px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-grid"
+                      >
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                      </svg>
+                    </a>
+                    <a class="layout2 layout-toggle">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18px"
+                        height="18px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-list"
+                      >
+                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <input
+              type="text"
+              placeholder="&#xf002; Search Product"
+              class="search-input"
+            />
+            <div class="found-items-grid pb-5" id="foundedItem"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/buttons.js" type="module"></script>
+    <script src="js/model.js" type="module"></script>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
